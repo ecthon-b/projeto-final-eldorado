@@ -1,0 +1,248 @@
+header {
+    display: flex;
+    height: 280px;
+    background: var(--purple);
+    justify-content: center;
+
+    .navbar {
+        display: flex;
+        width: 1120px;
+        height: 130px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--light-gray);
+
+        .navbar-profile {
+            display: flex;
+            align-items: center;
+            img {
+                width: 74px;
+                height: 74px;
+                border: 3px solid var(--green);
+                border-radius: 50%;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+
+                p {
+                    color: var(--light-gray);
+                    font-size: 1rem;
+                }
+
+                span {
+                    color: var(--white);
+                    font-family: "Rajdhani", sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .navbar-actions {
+            display: flex;
+            border-radius: 5px;
+
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--white);
+                width: 415px;
+                height: 56px;
+                border-radius: 5px;
+                margin-right: 64px;
+
+                input {
+                    width: 85%;
+                    height: 70%;
+                    margin-left: 10px;
+                    border: 0;
+                    outline: 0;
+                    border-radius: 5px;
+
+                    font-family: "Inter", sans-serif;
+                    font-weight: bold;
+                    color: var(--dark-gray);
+                    font-size: 1.125rem;
+                }
+
+                ion-icon {
+                    color: var(--light-gray);
+                    margin: 0 15px;
+                    font-size: 24px;
+                }
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--green);
+                border: none;
+                border-radius: 5px;
+                width: 192px;
+                height: 56px;
+                font-weight: bold;
+                color: var(--white);
+                cursor: pointer;
+                transition: 0.2;
+
+                &:hover {
+                    background: opacify($color: #21e434, $amount: 0.9); 
+                }
+
+                ion-icon {
+                    width:  32px;
+                    height: 32px;
+                    background: var(--white);
+                    margin-right: 10px;
+                    border-radius: 4px;
+
+                    font-size: 18px;
+                    color: var(--white);
+                    background: rgba($color: #FFF, $alpha: 0.3);
+                }
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    margin-top: -80px;
+
+    .card-container {
+        display: flex;
+        align-items: center;
+        width: 1120px;
+        height: 166px;
+        background: var(--white);
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            border: 1px solid var(--dark-gray);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        span {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 115px;
+            height: 135px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+    }
+
+    .card-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+        width: 100%;
+        height: 134PX;
+        
+        .data-top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 64px;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                .titulos {
+                    text-transform: uppercase;
+                    color: var(--light-gray);
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                }
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--dark-gray);
+                }
+            }
+
+            .info-actions {
+                display: flex;
+                gap: 15px;
+
+                ion-icon {
+                    padding: 4px;
+                    border: 1px solid var(--light-gray);
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                    color: var(--green);
+                    cursor: pointer;
+                    transition: 0.2s;
+
+                    & + ion-icon {
+                        color: var(--red);
+                        transition: 0.2s;
+                    }
+
+                    &:hover {
+                        background: var(--green);
+                        color: var(--white);
+                        border: 1px solid var(--green);
+                        font-weight: bold;
+                    }
+                    
+                     & + ion-icon:hover {
+                         background: var(--red);
+                        color: var(--white);
+                        border: 1px solid var(--red);
+                        font-weight: bold;
+                     }
+                }     
+            }
+        }
+        .data-bottom {
+            display: flex;
+            width: 100%;
+            height: 64px;
+
+            .info {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                margin-right: 10px;
+
+                .titulos {
+                    text-transform: uppercase;
+                    color: var(--light-gray);
+                    font-size: 0.875rem;
+                }
+
+                p {
+                    margin-top: 4px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: var(--dark-gray);
+                }
+            }
+        }
+
+    }
+}
+

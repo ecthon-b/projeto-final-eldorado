@@ -1,0 +1,324 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 280px;
+  background: var(--purple);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  height: 130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+header .navbar .navbar-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .navbar-profile img {
+  width: 74px;
+  height: 74px;
+  border: 3px solid var(--green);
+  border-radius: 50%;
+}
+
+header .navbar .navbar-profile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+header .navbar .navbar-profile div p {
+  color: var(--light-gray);
+  font-size: 1rem;
+}
+
+header .navbar .navbar-profile div span {
+  color: var(--white);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header .navbar .navbar-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+
+header .navbar .navbar-actions .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--white);
+  width: 415px;
+  height: 56px;
+  border-radius: 5px;
+  margin-right: 64px;
+}
+
+header .navbar .navbar-actions .search input {
+  width: 85%;
+  height: 70%;
+  margin-left: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+}
+
+header .navbar .navbar-actions .search ion-icon {
+  color: var(--light-gray);
+  margin: 0 15px;
+  font-size: 24px;
+}
+
+header .navbar .navbar-actions .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--green);
+  border: none;
+  border-radius: 5px;
+  width: 192px;
+  height: 56px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  -webkit-transition: 0.2;
+  transition: 0.2;
+}
+
+header .navbar .navbar-actions .btn:hover {
+  background: #21e434;
+}
+
+header .navbar .navbar-actions .btn ion-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--white);
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+.container .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1120px;
+  height: 166px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .card-container:hover {
+  border: 1px solid var(--dark-gray);
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container .card-container span {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-right: 1rem;
+}
+
+.container .card-container img {
+  width: 115px;
+  height: 135px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.container .card-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+  width: 100%;
+  height: 134PX;
+}
+
+.container .card-data .data-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 64px;
+}
+
+.container .card-data .data-top .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .card-data .data-top .info .titulos {
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.container .card-data .data-top .info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.container .card-data .data-top .info-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.container .card-data .data-top .info-actions ion-icon {
+  padding: 4px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: var(--green);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .card-data .data-top .info-actions ion-icon + ion-icon {
+  color: var(--red);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .card-data .data-top .info-actions ion-icon:hover {
+  background: var(--green);
+  color: var(--white);
+  border: 1px solid var(--green);
+  font-weight: bold;
+}
+
+.container .card-data .data-top .info-actions ion-icon + ion-icon:hover {
+  background: var(--red);
+  color: var(--white);
+  border: 1px solid var(--red);
+  font-weight: bold;
+}
+
+.container .card-data .data-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 64px;
+}
+
+.container .card-data .data-bottom .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10px;
+}
+
+.container .card-data .data-bottom .info .titulos {
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 0.875rem;
+}
+
+.container .card-data .data-bottom .info p {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+/*# sourceMappingURL=home.css.map */

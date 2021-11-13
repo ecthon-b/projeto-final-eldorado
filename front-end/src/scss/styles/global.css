@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Rajdhani:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --purple: #7E2FA4;
+    --green: #2CF140;
+    --red: #ff3419;
+    --light-gray: #BFBFCC;
+    --dark-gray: #787880;
+    --white: #FFFFFF;
+}
+
+body {
+    background: #F6F7FF;
+    font-family: "Inter", sans-serif;
+}
+
+button, input, p {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Rajdhani", sans-serif;
+}
