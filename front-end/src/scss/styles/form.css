@@ -1,0 +1,108 @@
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--light-gray);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50px;
+  padding: 8px 16px;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+.container .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1120px;
+  height: 70vh;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.container .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 700px;
+  margin-top: 30px;
+}
+
+.container .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.container .form-item:hover .titulos {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.container .form-item:hover input {
+  border: 1px solid var(--purple);
+}
+
+.container .form-item .titulos {
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.container .form-item input {
+  height: 52px;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  outline: 0;
+  padding: 0 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+}
+
+.container .form-item input:hover {
+  border: 1px solid var(--purple);
+}
